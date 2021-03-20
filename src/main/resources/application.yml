@@ -1,0 +1,25 @@
+description:  ${spring.application.description}
+title:  ${spring.application.name}
+version:  ${spring.application.version}
+
+info:
+  app:
+    id: ${spring.application.id}
+    name: ${spring.application.name}
+    version: ${spring.application.version}
+
+server:
+  port: 14008
+
+spring:
+  application:
+    description: Lostboyz message consumer service
+    id: lostboyz-message-consumer-service
+    name: lostboyz-message-consumer-service
+    version: 0.0.1-SNAPSHOT
+  output:
+    ansi:
+      enabled: detect
+  rabbitmq:
+    template:
+      routing-key: payload

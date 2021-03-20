@@ -1,0 +1,5 @@
+rabbitmq:
+  image: ${RMQ_IMG}
+  ports:
+    - ${RMQ_PORT_1}
+    - ${RMQ_PORT_2}
