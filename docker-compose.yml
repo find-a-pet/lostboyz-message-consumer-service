@@ -1,5 +1,7 @@
-rabbitmq:
+services:
+ rabbitmq:
   image: ${RMQ_IMG}
+  container_name: 'lostboyz-rabbitmq'
   ports:
     - ${RMQ_PORT_1}
     - ${RMQ_PORT_2}
