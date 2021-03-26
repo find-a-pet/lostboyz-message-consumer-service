@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.http.*;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
@@ -16,6 +17,7 @@ import java.net.URISyntaxException;
 
 import static org.springframework.http.HttpStatus.Series.*;
 
+@Component
 public class MessageConsumerImpl implements MessageConsumer {
 
     private static final Logger LOG = LoggerFactory.getLogger(MessageConsumerImpl.class);
