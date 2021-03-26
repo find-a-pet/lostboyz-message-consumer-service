@@ -20,3 +20,9 @@ spring:
   output:
     ansi:
       enabled: detect
+  rabbitmq:
+    host: ${CLOUDAMQP_HOST}
+    username: ${CLOUDAMQP_USERNAME}
+    password: ${CLOUDAMQP_PASSWORD}
+    virtual-host: ${CLOUDAMQP_VIRTUAL_HOST}
+    port: 5672
